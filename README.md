@@ -13,7 +13,8 @@ modules: true,
 localIdentName: '[name]__[local]__[hash:base64:5]',
 ```
 これで名前がカブらずcssをモジュールとしてclassNameに割当できる
-```react
+```js
+import classes from 'App.css';
 // App.js
 <div className={classes.Hoge}></div>
 // App.css
