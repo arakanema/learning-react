@@ -12,10 +12,10 @@ npm run eject
 modules: true,
 localIdentName: '[name]__[local]__[hash:base64:5]',
 ```
-これで名前が被ることが無い、かつ、import classes from 'hoge.css' で割当が可能になる
+これで名前がカブらずcssをモジュールとしてclassNameに割当できる
 ```react
 // App.js
-<div classes.Hoge></div>
+<div className={classes.Hoge}></div>
 // App.css
 .Hoge { color: #fff; }
 ```
