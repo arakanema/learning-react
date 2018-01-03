@@ -15,7 +15,9 @@ const buildControls = (props) => (
     {controls.map(ctrl => (
       <BuildControl
         key={ctrl.label}
-        label={ctrl.label} />
+        label={ctrl.label}
+        // type={ctrl.type}
+        added={() => props.ingredientAdded(ctrl.type)} />
     ))}
   </div>
 );
