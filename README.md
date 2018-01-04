@@ -35,3 +35,12 @@ import classes from 'App.css';
 - ラッピングするために利用
 - hoc ▶ Higher Order Component
 - Aux ▶ auxiliary（補助）
+
+## 基本的なこと
+class内で this を使えるのはアロー関数の時のみ。  
+意外とハマるかもしれないので注意!
+```js
+const hoge = (props) => {
+  return this.props.fugafuga ? 'fuga' : 'hoge';
+}
+```
