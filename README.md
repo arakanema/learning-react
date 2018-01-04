@@ -26,15 +26,17 @@ import classes from 'App.css';
     - src/components
         - ステートレスのコンポーネント = functional component
         - const で作って props を渡す
+        - classを使っても良いが、ステートレスを徹底する
     - src/containers
-        - 基本的にステートフルのコンポーネントを入れる
+        - ステートフルのコンポーネント
         - class で作って state を管理
         − setStateメソッドで state を変更していく
+        - ◯◯Handlerが多くなるが、一箇所にまとめないと死ぬ
 
 ## hoc と Aux を使う
-- ラッピングするために利用
+ラッピングするために利用
 - hoc ▶ Higher Order Component
-- Aux ▶ auxiliary（補助）
+    - Aux ▶ auxiliary（補助）
 
 ## 基本的なこと
 class内で this を使えるのはアロー関数の時のみ。  
